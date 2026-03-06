@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #1f3c88;
+    background-color: #548687;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -62,8 +62,103 @@ main h1 {
     margin: 1rem 0;
 }
 
+.about-card {
+    background-color: #f5f1e9;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+
+.about-card h2 {
+    background-color: #548687;
+    color: white;
+    text-align: center;
+    padding: 1.1rem;
+    margin: 0;
+}
+
+.about-top {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 2rem;
+    align-items: start;
+    padding: 1.75rem;
+}
+
+.about-top p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.about-card .about-portrait {
+    width: auto;
+    height: 10rem;
+    object-fit: contain;
+    border: 1px solid #a0a0a0;
+    margin: 0;
+}
+
+.about-card h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 1.75rem 0.5rem;
+    color: #294448;
+}
+
+.about-card hr {
+    border: 0;
+    border-top: 2px solid #d8cbbc;
+    margin: 0 1.75rem 1.25rem;
+}
+
+.about-goals {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 1.75rem;
+    padding: 0 1.75rem 1.75rem;
+    align-items: start;
+}
+
+.goals-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.about-card .goals-image {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #9f9f9f;
+    margin-bottom: 1rem;
+}
+
+.goals-figure figcaption {
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.goals-list {
+    margin: 0;
+    padding-left: 1.35rem;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 750px) {
+    .about-top,
+    .about-goals {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card .about-portrait,
+    .about-card .goals-image {
+        justify-self: center;
+    }
+}
+
 footer {
-    background-color: #1f3c88;
+    background-color: #548687;
     color: white;
     text-align: center;
     padding: 1rem;
