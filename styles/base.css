@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #548687;
+    background-color: #2a6061;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -39,16 +39,23 @@ nav a:hover {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 2rem auto;
     display: grid;
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    gap: 10px;
+    padding: 0 10px;
 }
 
 main h1 {
     text-align: center;
+    grid-column: 1 / -1;
 }
 
+img{ 
+    border-radius: 8px;
+}
 .card {
     background: white;
     padding: 1rem;
@@ -63,7 +70,7 @@ main h1 {
 }
 
 .about-card {
-    background-color: #f5f1e9;
+    background-color: #fffdf9;
     border-radius: 14px;
     overflow: hidden;
     padding: 0;
@@ -71,7 +78,7 @@ main h1 {
 }
 
 .about-card h2 {
-    background-color: #548687;
+    background-color: #2a6061;
     color: white;
     text-align: center;
     padding: 1.1rem;
@@ -100,7 +107,7 @@ main h1 {
 }
 
 .about-card h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: center;
     margin: 0 1.75rem 0.5rem;
     color: #294448;
@@ -112,7 +119,7 @@ main h1 {
     margin: 0 1.75rem 1.25rem;
 }
 
-.about-goals {
+.about-country {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 1.75rem;
@@ -120,45 +127,66 @@ main h1 {
     align-items: start;
 }
 
-.goals-figure {
+.country-figure {
     margin: 0;
     text-align: center;
 }
 
-.about-card .goals-image {
+.about-card .country-image {
     width: 220px;
     height: 140px;
     object-fit: cover;
-    border: 1px solid #9f9f9f;
     margin-bottom: 1rem;
 }
 
-.goals-figure figcaption {
+.country-figure figcaption {
     font-size: 1.05rem;
     font-style: italic;
 }
 
-.goals-list {
+.country-list {
     margin: 0;
     padding-left: 1.35rem;
     font-size: 1.08rem;
     line-height: 1.75;
+    align-self: center;
 }
 
-@media (max-width: 750px) {
-    .about-top,
-    .about-goals {
-        grid-template-columns: 1fr;
-    }
+.resources-card {
+    background-color: #fffdf9;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    min-height: 100%;
+}
 
-    .about-card .about-portrait,
-    .about-card .goals-image {
-        justify-self: center;
-    }
+.resources-card h2 {
+    background-color: #2a6061;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    margin: 0;
+    font-size: 1.45rem;
+}
+
+.resources-list {
+    margin: 0;
+    padding: 3.25rem 2rem 1.5rem 2.15rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.resources-list a {
+    color: #1a3a9c;
+}
+
+.resources-list a:hover {
+    color: #10266a;
 }
 
 footer {
-    background-color: #548687;
+    background-color: #2a6061;
     color: white;
     text-align: center;
     padding: 1rem;
