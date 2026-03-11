@@ -9,6 +9,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 0 1rem;
+        justify-self: center;
     }
 
     #menu {
