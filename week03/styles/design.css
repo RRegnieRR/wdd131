@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #111;
+}
+
+:root {
+    --max-width: 1200px;
+    --pad-x: 24px;
+    --pad-y: 24px;
+    --rule: #ddd;
+    --accent-blue: #0000ff;
+    --banner-bg: #d4e6f1;
+    --callout-bg: #e8e8e8;
+}
+
+.banner {
+    background-color: var(--banner-bg);
+    color: #111;
+    padding: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(3rem, 6vw, 4.25rem);
+    color: #111;
+    padding-bottom: 16px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--accent-blue);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+h3 {
+    color: #111;
+    margin: 0 0 12px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "heading heading"
+        "article list"
+        "callout callout";
+    column-gap: 80px;
+    row-gap: 40px;
+    align-items: start;
+}
+
+main > h2 {
+    grid-area: heading;
+    margin-bottom: 56px;
+}
+
+header,
+main,
+footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: var(--pad-x);
+    padding-right: var(--pad-x);
+}
+
+header {
+    padding-top: var(--pad-y);
+    padding-bottom: 0;
+}
+
+main {
+    padding-top: 16px;
+    padding-bottom: var(--pad-y);
+}
+
+article p {
+    color: #111;
+    font-size: 1.1em;
+}
+
+ul {
+    padding-left: 1.2rem;
+    color: #111;
+}
+
+ul li {
+    margin-bottom: 0.4rem;
+    font-size: 1.1em;
+}
+
+.callout {
+    background-color: var(--callout-bg);
+    padding: 28px;
+}
+
+.callout h3 {
+    font-weight: 700;
+}
+
+.callout p {
+    color: #111;
+    font-size: 1.1em;
+}
+
+footer {
+    color: #111;
+    text-align: left;
+    padding-top: 16px;
+    padding-bottom: var(--pad-y);
+    border-top: 1px solid var(--rule);
+    font-size: 1.05rem;
+}
+
+.article-section {
+    grid-area: article;
+}
+
+.list-section {
+    grid-area: list;
+}
+
+.callout {
+    grid-area: callout;
+}
+
+.lead-emoji {
+    display: inline-block;
+    margin-right: 0.35rem;
+    font-size: 1.2em;
+    line-height: 1;
+    vertical-align: -0.12em;
+}
+
+@media (max-width: 760px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "heading"
+            "article"
+            "list"
+            "callout";
+        column-gap: 0;
+    }
+
+    main > h2 {
+        margin-bottom: 32px;
+    }
+}
