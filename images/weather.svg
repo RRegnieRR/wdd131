@@ -1,0 +1,27 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 64 64"
+    width="64"
+    height="64"
+    role="img"
+    aria-label="Partly cloudy"
+>
+    <g fill="none" stroke="#f2b705" stroke-linecap="round" stroke-width="4">
+        <line x1="18" y1="6" x2="18" y2="12" />
+        <line x1="18" y1="36" x2="18" y2="42" />
+        <line x1="2" y1="24" x2="8" y2="24" />
+        <line x1="28" y1="24" x2="34" y2="24" />
+        <line x1="7" y1="13" x2="11" y2="17" />
+        <line x1="25" y1="31" x2="29" y2="35" />
+        <line x1="25" y1="17" x2="29" y2="13" />
+        <line x1="7" y1="35" x2="11" y2="31" />
+    </g>
+    <circle cx="18" cy="24" r="9" fill="#f2b705" />
+
+    <g fill="#d7dde3">
+        <circle cx="36" cy="36" r="10" />
+        <circle cx="46" cy="38" r="8" />
+        <circle cx="28" cy="40" r="8" />
+        <rect x="24" y="36" width="32" height="14" rx="7" />
+    </g>
+</svg>

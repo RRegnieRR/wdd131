@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #0b6b4a;
+    --accent-2: #b31237;
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --border: #e5e7eb;
+    --text: #0f172a;
+    --muted: #475569;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+    --max-width: 1200px;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+header {
+    background: var(--surface);
+    color: var(--text);
+    text-align: center;
+    padding: 1.25rem 1rem 1rem;
+    border-top: 4px solid var(--accent-2);
+    border-bottom: 4px solid var(--accent);
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 0.3px;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    background: var(--surface);
+    margin: 1rem;
+    padding: 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.card h2 {
+    background: transparent;
+    color: var(--text);
+    padding: 0 0 0.35rem 0.75rem;
+    margin: 0 0 0.9rem;
+    border-left: 4px solid var(--accent);
+    font-size: 1.35rem;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 0.75rem;
+    margin: 0;
+}
+
+.facts dt {
+    text-align: right;
+    font-weight: 600;
+}
+
+.facts dt::after {
+    content: ":";
+}
+
+.facts dd {
+    margin: 0;
+    color: var(--muted);
+}
+
+.weather-icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto 0.75rem;
+    opacity: 0.9;
+}
+
+footer {
+    background: var(--surface);
+    color: var(--muted);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+@media (min-width: 900px) {
+    .hero {
+        display: grid;
+        grid-template-areas: "stack";
+    }
+
+    .hero img {
+        grid-area: stack;
+    }
+
+    .card {
+        grid-area: stack;
+        width: min(360px, 92%);
+        background: var(--card-bg);
+        box-shadow: var(--shadow);
+    }
+
+    .data {
+        justify-self: start;
+        align-self: start;
+        margin: 1.5rem;
+    }
+
+    .weather {
+        justify-self: end;
+        align-self: end;
+        margin: 1.5rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .weather h2::after {
+        content: "";
+        width: 28px;
+        height: 28px;
+        background: url("../images/weather.svg") no-repeat center / contain;
+        opacity: 0.95;
+    }
+}

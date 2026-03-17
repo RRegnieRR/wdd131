@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 - Week 03 country/place page assignment."
+    />
+    <meta name="author" content="Luis Regnier" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Mexico</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mexico</h1>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img
+          src="images/mexico-1000.webp"
+          srcset="
+            images/mexico-500.webp   500w,
+            images/mexico-1000.webp 1000w,
+            images/mexico-1500.webp 1500w
+          "
+          sizes="(min-width: 1200px) 1200px, 100vw"
+          alt="A landscape view in Mexico"
+          width="1500"
+          height="998"
+          loading="eager"
+        />
+
+        <section class="card data" aria-labelledby="data-title">
+          <h2 id="data-title">Data</h2>
+          <dl class="facts">
+            <dt>Area</dt>
+            <dd>1,964,375 sq km</dd>
+            <dt>Population</dt>
+            <dd>~128,000,000</dd>
+            <dt>Capital</dt>
+            <dd>Mexico City</dd>
+            <dt>Languages</dt>
+            <dd>Spanish</dd>
+            <dt>Currency</dt>
+            <dd>Mexican Peso (MXN)</dd>
+            <dt>Time Zone</dt>
+            <dd>UTC-8 to UTC-5</dd>
+            <dt>Calling Code</dt>
+            <dd>+52</dd>
+            <dt>Internet TLD</dt>
+            <dd>.mx</dd>
+          </dl>
+        </section>
+
+        <section class="card weather" aria-labelledby="weather-title">
+          <h2 id="weather-title">Weather</h2>
+
+          <dl class="facts">
+            <dt>Temperature</dt>
+            <dd><span id="temp">9</span> °C</dd>
+            <dt>Conditions</dt>
+            <dd>Partly Cloudy</dd>
+            <dt>Wind</dt>
+            <dd><span id="wind">10</span> km/h</dd>
+            <dt>Wind Chill</dt>
+            <dd><span id="windchill">--</span></dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> Luis Regnier 🧑‍💻 | Mexico</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
