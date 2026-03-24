@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 filtered temple album made by Luis Regnier"
+    />
+    <meta name="author" content="Luis Regnier" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <title>Filtered Temple Album</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <h1>Temple Album</h1>
+        <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+
+      <nav id="mainNav" aria-label="Temple filters">
+        <ul class="nav-list">
+          <li>
+            <button class="nav-link active" type="button" data-filter="home" aria-pressed="true">
+              Home
+            </button>
+          </li>
+          <li>
+            <button class="nav-link" type="button" data-filter="old" aria-pressed="false">
+              Old
+            </button>
+          </li>
+          <li>
+            <button class="nav-link" type="button" data-filter="new" aria-pressed="false">
+              New
+            </button>
+          </li>
+          <li>
+            <button class="nav-link" type="button" data-filter="large" aria-pressed="false">
+              Large
+            </button>
+          </li>
+          <li>
+            <button class="nav-link" type="button" data-filter="small" aria-pressed="false">
+              Small
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 id="pageTitle">Home</h2>
+      <section id="templeCards" class="temple-grid" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Luis Regnier 🧑‍💻 | WDD 131</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
