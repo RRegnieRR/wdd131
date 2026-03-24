@@ -78,6 +78,7 @@ nav.open {
   border-radius: 6px;
   font: inherit;
   color: #ffffff;
+  text-decoration: none;
   text-align: left;
   background: rgba(255, 255, 255, 0.08);
 }
@@ -119,8 +120,6 @@ main h2 {
   border-radius: 14px;
   background: var(--card);
   box-shadow: 0 16px 28px rgba(29, 78, 79, 0.08);
-  content-visibility: auto;
-  contain-intrinsic-size: 430px;
 }
 
 .temple-card img {

@@ -122,7 +122,9 @@ menuButton.addEventListener("click", () => {
 });
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
     const filterName = link.dataset.filter;
     const selectedFilter = filters[filterName];
     const filteredTemples = temples.filter(selectedFilter.predicate);
@@ -189,7 +191,12 @@ function updateActiveLink(activeLink) {
     const isActive = link === activeLink;
 
     link.classList.toggle("active", isActive);
-    link.setAttribute("aria-pressed", String(isActive));
+
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 
