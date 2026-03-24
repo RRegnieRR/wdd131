@@ -53,18 +53,14 @@ header h1 {
 }
 
 nav {
-  display: none;
-  margin-top: 0.75rem;
-}
-
-nav.open {
-  display: block;
-}
-
-#mainNav {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+nav:not(.open) {
+  display: none;
 }
 
 .nav-link {
