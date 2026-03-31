@@ -1,0 +1,141 @@
+:root {
+  --ink: #111111;
+  --cream: #f7f2e8;
+  --orange: #ff6b35;
+  --slate: #21313c;
+  --card: #fffdf7;
+  --display: "Bebas Neue", Impact, sans-serif;
+  --body: "Manrope", "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.6;
+}
+
+.siteplan {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.siteplan-hero {
+  padding: 1.5rem;
+  background: var(--slate);
+  color: #fffdf7;
+  border-radius: 0.75rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-top: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.8rem;
+  line-height: 1.05;
+}
+
+h1,
+h2 {
+  font-family: var(--display);
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.lead {
+  max-width: 42rem;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.plan-section {
+  margin-top: 1.5rem;
+}
+
+.plan-card,
+.swatch {
+  border-radius: 0.75rem;
+  background: var(--card);
+  border: 1px solid #d7d2c8;
+}
+
+.plan-card {
+  padding: 1rem;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.swatch {
+  min-height: 6rem;
+  padding: 0.75rem;
+  color: #fffdf7;
+  font-weight: 700;
+}
+
+.ink {
+  background: #111111;
+}
+
+.cream {
+  background: #f7f2e8;
+  color: #111111;
+}
+
+.orange {
+  background: #ff6b35;
+}
+
+.lime {
+  background: #c4ff5a;
+  color: #111111;
+}
+
+.slate {
+  background: #21313c;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 780px) {
+  .plan-grid,
+  .palette {
+    grid-template-columns: 1fr;
+  }
+}
