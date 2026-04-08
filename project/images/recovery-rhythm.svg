@@ -1,0 +1,29 @@
+<svg width="620" height="500" viewBox="0 0 620 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="500" rx="40" fill="#FFFDF7"/>
+  <rect x="24" y="24" width="572" height="452" rx="30" fill="#F7F2E8" stroke="#21313C" stroke-opacity="0.12"/>
+  <rect x="60" y="120" width="152" height="240" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <rect x="234" y="120" width="152" height="240" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <rect x="408" y="120" width="152" height="240" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <circle cx="136" cy="178" r="42" fill="#C4FF5A" fill-opacity="0.5"/>
+  <circle cx="310" cy="178" r="42" fill="#FF6B35" fill-opacity="0.22"/>
+  <circle cx="484" cy="178" r="42" fill="#21313C" fill-opacity="0.12"/>
+  <ellipse cx="136" cy="190" rx="42" ry="28" fill="#FFFDF7" stroke="#21313C" stroke-width="10"/>
+  <ellipse cx="136" cy="190" rx="24" ry="14" fill="#C4FF5A" fill-opacity="0.35"/>
+  <rect x="292" y="152" width="36" height="82" rx="14" fill="#21313C"/>
+  <rect x="298" y="132" width="24" height="24" rx="10" fill="#FF6B35"/>
+  <rect x="300" y="172" width="20" height="46" rx="8" fill="#FFFDF7"/>
+  <path d="M476 202C476 183.222 491.222 168 510 168C512.832 168 515.583 168.346 518.212 168.998C511.103 172.677 506.248 180.093 506.248 188.642C506.248 200.843 516.139 210.734 528.34 210.734C529.872 210.734 531.368 210.578 532.813 210.281C527.434 220.928 516.401 228.2 503.67 228.2C488.206 228.2 476 215.664 476 200.2V202Z" fill="#21313C"/>
+  <path d="M212 240H234" stroke="#21313C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M386 240H408" stroke="#21313C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M222 230L234 240L222 250" stroke="#21313C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M396 230L408 240L396 250" stroke="#21313C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="136" y="276" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Eat</text>
+  <text x="136" y="308" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Regular meals</text>
+  <text x="136" y="330" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">with protein</text>
+  <text x="310" y="276" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Hydrate</text>
+  <text x="310" y="308" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Drink water</text>
+  <text x="310" y="330" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">through the day</text>
+  <text x="484" y="276" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Sleep</text>
+  <text x="484" y="308" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Get enough</text>
+  <text x="484" y="330" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">recovery time</text>
+</svg>

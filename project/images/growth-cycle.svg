@@ -1,0 +1,29 @@
+<svg width="620" height="500" viewBox="0 0 620 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="500" rx="40" fill="#FFFDF7"/>
+  <rect x="24" y="24" width="572" height="452" rx="30" fill="#F7F2E8" stroke="#21313C" stroke-opacity="0.12"/>
+  <rect x="58" y="126" width="146" height="228" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <rect x="238" y="126" width="146" height="228" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <rect x="418" y="126" width="146" height="228" rx="28" fill="#FFFDF7" stroke="#21313C" stroke-opacity="0.14"/>
+  <circle cx="131" cy="190" r="38" fill="#C4FF5A" fill-opacity="0.52"/>
+  <circle cx="311" cy="190" r="38" fill="#FF6B35" fill-opacity="0.22"/>
+  <circle cx="491" cy="190" r="38" fill="#21313C" fill-opacity="0.12"/>
+  <rect x="98" y="182" width="66" height="10" rx="5" fill="#21313C"/>
+  <rect x="84" y="164" width="10" height="46" rx="5" fill="#FF6B35"/>
+  <rect x="164" y="164" width="10" height="46" rx="5" fill="#FF6B35"/>
+  <path d="M290 198C290 182.536 302.536 170 318 170C333.464 170 346 182.536 346 198C346 213.464 333.464 226 318 226" stroke="#21313C" stroke-width="14" stroke-linecap="round"/>
+  <path d="M334 220L346 226L338 238" stroke="#FF6B35" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M478 210L490 176L504 202L526 166" stroke="#FF6B35" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 240H238" stroke="#21313C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M384 240H418" stroke="#21313C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M226 228L238 240L226 252" stroke="#21313C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M406 228L418 240L406 252" stroke="#21313C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="131" y="272" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Train</text>
+  <text x="131" y="304" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Lift with good</text>
+  <text x="131" y="326" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">effort and form</text>
+  <text x="311" y="272" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Recover</text>
+  <text x="311" y="304" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Eat, rest, and</text>
+  <text x="311" y="326" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">sleep enough</text>
+  <text x="491" y="272" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="24" font-weight="700">Grow</text>
+  <text x="491" y="304" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">Adapt over</text>
+  <text x="491" y="326" text-anchor="middle" fill="#21313C" font-family="Arial, sans-serif" font-size="16">time and repeat</text>
+</svg>

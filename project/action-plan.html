@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Make a simple beginner muscle growth plan based on your habits.">
+  <meta name="author" content="Luis Regnier">
+  <title>Lift to Grow | Starter Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body data-page="plan">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrapper header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LTG</span>
+        <span class="brand-text">Lift to Grow</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="science.html">How Growth Works</a>
+        <a href="mistakes.html">Mistakes &amp; Recovery</a>
+        <a href="action-plan.html">Starter Plan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="wrapper narrow-flow">
+        <p class="eyebrow">Starter Plan</p>
+        <h1>Answer a few questions and get a simple starting point.</h1>
+        <p class="lead">
+          This is a simple tool for beginners. It is not professional advice, but it can help you see what area you
+          should focus on first.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrapper plan-layout">
+        <form class="plan-form" data-plan-form>
+          <div class="section-heading align-left">
+            <p class="eyebrow">Form</p>
+            <h2>Build your weekly focus</h2>
+          </div>
+
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" type="text" minlength="2" maxlength="24" required>
+
+          <label for="days">How many lifting days can you do each week?</label>
+          <select id="days" name="days" required>
+            <option value="">Choose one</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
+            <option value="4">4 days</option>
+            <option value="5">5 days</option>
+          </select>
+
+          <label for="proteinMeals">How many meals usually include a solid protein source?</label>
+          <select id="proteinMeals" name="proteinMeals" required>
+            <option value="">Choose one</option>
+            <option value="1">About 1 meal</option>
+            <option value="2">About 2 meals</option>
+            <option value="3">About 3 meals</option>
+            <option value="4">4 or more meals</option>
+          </select>
+
+          <label for="sleep">Average sleep per night</label>
+          <input id="sleep" name="sleep" type="number" min="4" max="10" step="0.5" required>
+
+          <fieldset>
+            <legend>Training experience</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="experience" value="new" required> Brand new</label>
+              <label><input type="radio" name="experience" value="returning"> Returning after a break</label>
+              <label><input type="radio" name="experience" value="consistent"> Fairly consistent</label>
+            </div>
+          </fieldset>
+
+          <label for="challenge">What is your biggest problem right now?</label>
+          <select id="challenge" name="challenge" required>
+            <option value="">Choose one</option>
+            <option value="consistency">Missing workouts</option>
+            <option value="nutrition">Not eating enough protein or calories</option>
+            <option value="recovery">Poor sleep or constant fatigue</option>
+            <option value="intensity">Training hard but not progressing</option>
+          </select>
+
+          <div class="button-row">
+            <button class="button button-primary" type="submit">Show My Plan</button>
+            <button class="button button-secondary" type="button" data-reset-plan>Clear Saved Plan</button>
+          </div>
+        </form>
+
+        <section class="result-panel" aria-live="polite" data-plan-result>
+          <div class="result-empty">
+            <p class="eyebrow">Saved Result</p>
+            <h2>No plan generated yet</h2>
+            <p>Fill out the form to get a simple focus and a few next steps.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section section-banner">
+      <div class="wrapper banner-card">
+        <div>
+          <p class="eyebrow">Saved Plan</p>
+          <h2>Your last plan is saved in local storage.</h2>
+        </div>
+        <p>
+          That means the page can remember your last result if you come back later.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-grid">
+      <div>
+        <p class="footer-title">Lift to Grow</p>
+        <p>WDD 131 project about hypertrophy.</p>
+      </div>
+      <div class="footer-links">
+        <a href="references.html">References</a>
+        <a href="siteplan.html">Site Plan</a>
+      </div>
+      <p>&copy; <span data-year></span> Lift to Grow</p>
+    </div>
+  </footer>
+</body>
+</html>
